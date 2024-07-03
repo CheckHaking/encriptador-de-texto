@@ -7,6 +7,49 @@
     <link rel="stylesheet" href="./styles/style.css" >
 </head>
 <body>
-    <h1>Hola cripto</h1>
+
+    <div class="contenedor__principal">
+        <div class="contenedor__texto">
+            <img src="/assets/Logo.png" class="logo"/>
+
+            <div class="contenedor__texto__usuario">
+
+               <textarea 
+                    class="input__texto__usuario" 
+                    id="texto_usuario"
+                    cols="30" 
+                    rows="10" 
+                    placeholder="Ingrese texto aqui">
+                </textarea>
+
+               <p class="parrafo__alerta">
+                <img src="/assets/info-icon.png"  class="icon__alert"/>
+                Solo letras minusculas y sin acentos
+               </p>
+
+               <div class="contenedor__botones">
+
+                <button class="boton__encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="boton__desencriptar" onclick="desencriptar()">Desencriptar</button>
+               </div>
+
+            </div>
+            
+        </div>
+
+        <div class="contenedor__texto__encriptado">
+            <p class="texto__encriptado"  id="encrypted_text">
+            </p>
+            <img src="/images/Muñeco.png">
+            <h2 class="mensaje-no-encontrado">No se han encontrado mensajes.</h2>
+            <p class="mensaje-ingresa">Ingresa el texto que deseas encriptar</p>
+            <button class="boton__copiar" onclick="copiarTexto()">COPIAR</button>
+        </div>
+
+
+    </div>
+   
 </body>
+
+<script src="index.js"></script>
 </html>
